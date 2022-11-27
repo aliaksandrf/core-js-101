@@ -244,6 +244,17 @@ function getRectangleString(/* width, height */) {
  *
  */
 function encodeToRot13(/* str */) {
+/*   const source = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const code = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+  const answer = [];
+  for (let i = 0; i < str.length; i + 1) {
+    if (str[i] === ' ') {
+      answer.push(' ');
+    } else {
+      answer.push(code[source.indexOf(str[i])]);
+    }
+  }
+  return answer.join(''); */
   throw new Error('Not implemented');
 }
 

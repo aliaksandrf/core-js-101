@@ -20,8 +20,9 @@
  *    ['Array', 'Number', 'string'], 'Date'    => -1
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
-function findElement(/* arr, value */) {
-  throw new Error('Not implemented');
+function findElement(arr, value) {
+  return arr.indexOf(value);
+/*   throw new Error('Not implemented'); */
 }
 
 /**
@@ -69,6 +70,9 @@ function doubleArray(/* arr */) {
  *    [] => []
  */
 function getArrayOfPositives(/* arr */) {
+/*   return arr.map((item) => item > 0); */
+
+
   throw new Error('Not implemented');
 }
 
@@ -84,6 +88,8 @@ function getArrayOfPositives(/* arr */) {
  *    [ 'cat, 'dog', 'raccoon' ] => [ 'cat', 'dog', 'raccoon' ]
  */
 function getArrayOfStrings(/* arr */) {
+/*   return arr.map((item) => typeof item === 'string'); */
+
   throw new Error('Not implemented');
 }
 
