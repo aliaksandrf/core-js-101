@@ -18,8 +18,9 @@
  *   'aa',''    => 'aa'
  *   '',  'bb'  => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function concatenateStrings(value1, value2) {
+  return value1 + value2;
+/*   throw new Error('Not implemented'); */
 }
 
 
@@ -34,8 +35,9 @@ function concatenateStrings(/* value1, value2 */) {
  *   'b'     => 1
  *   ''      => 0
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+function getStringLength(value) {
+  return value.length;
+/*   throw new Error('Not implemented'); */
 }
 
 /**
@@ -51,8 +53,9 @@ function getStringLength(/* value */) {
  *   'John','Doe'      => 'Hello, John Doe!'
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
-function getStringFromTemplate(/* firstName, lastName */) {
-  throw new Error('Not implemented');
+function getStringFromTemplate(firstName, lastName) {
+  return `Hello, ${firstName} ${lastName}!`;
+/*   throw new Error('Not implemented'); */
 }
 
 /**
@@ -65,8 +68,10 @@ function getStringFromTemplate(/* firstName, lastName */) {
  *   'Hello, John Doe!' => 'John Doe'
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
-function extractNameFromTemplate(/* value */) {
-  throw new Error('Not implemented');
+function extractNameFromTemplate(value) {
+  const temp = value.indexOf(' ') + 1;
+  return value.slice(temp, -1);
+  /* throw new Error('Not implemented'); */
 }
 
 
@@ -80,8 +85,9 @@ function extractNameFromTemplate(/* value */) {
  *   'John Doe'  => 'J'
  *   'cat'       => 'c'
  */
-function getFirstChar(/* value */) {
-  throw new Error('Not implemented');
+function getFirstChar(value) {
+  return value[0];
+/*   throw new Error('Not implemented'); */
 }
 
 /**
@@ -95,8 +101,9 @@ function getFirstChar(/* value */) {
  *   'cat'              => 'cat'
  *   '\tHello, World! ' => 'Hello, World!'
  */
-function removeLeadingAndTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
+function removeLeadingAndTrailingWhitespaces(value) {
+  return value.trim();
+/*   throw new Error('Not implemented'); */
 }
 
 /**
@@ -111,6 +118,13 @@ function removeLeadingAndTrailingWhitespaces(/* value */) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(/* value, count */) {
+/*   const stringAnsw = [];
+  for (let i = 0; i < count;) {
+    stringAnsw.push(value);
+    i = i + 1;
+  }
+
+  return stringAnsw.join(''); */
   throw new Error('Not implemented');
 }
 
